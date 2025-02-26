@@ -1,0 +1,155 @@
+:root {
+  --blue: rgb(51 133 228);
+}
+
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* padding: 40px 50px; */
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 40px 50px;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+.header ul {
+  display: flex;
+  width: fit-content;
+}
+
+/* .header li {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+} */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 0px 100px;
+  color: #fff;
+}
+
+.top-bar li {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+}
+
+.top-bar-right {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+}
+
+.top-bar-left {
+  display: flex;
+  width: 50%;
+}
+
+.nav-container {
+  display: flex;
+  padding: 0px 100px;
+  padding-top: 10px;
+}
+
+.nav {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav li {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+}
+
+#nav-btn {
+  width: 20%;
+  border: var(--blue) 1px solid;
+  background-color: var(--blue);
+  color: white;
+}
+
+/* .nav-container :nth-child(1) {
+  flex: 1;
+}
+.nav-container :nth-child(2) {
+  flex: 2;
+}
+.nav-container :nth-child(3) {
+  flex: 1;
+} */
+
+.slider-container {
+  display: flex;
+  height: 595px;
+  width: 100vw;
+  background-image: url(../Assets/Pics/slider3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider-btn {
+  flex: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.slider-content {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.slider-text {
+  width: 60%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.prev-btn {
+  width: 25%;
+  height: 10%;
+  color: #fff;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 100%;
+}
+
+.nxt-btn {
+  width: 25%;
+  height: 10%;
+  color: white;
+  border: 1px solid var(--blue);
+  background-color: var(--blue);
+  border-radius: 100%;
+}
+
+.prev-btn:hover,
+.nxt-btn:hover {
+  background-color: rgba(51, 133, 228, 0.8);
+}
