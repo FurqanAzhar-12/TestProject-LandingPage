@@ -142,8 +142,7 @@ body {
   border-radius: 100%;
 }
 
-.prev-btn:hover,
-.nxt-btn:hover {
+.slider-btn:hover {
   background-color: rgba(51, 133, 228, 0.8);
 }
 
