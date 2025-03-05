@@ -6,13 +6,14 @@
     <title>MediPlus</title>
     <link rel="icon" type="image/x-icon" href="../Assets/Images/favicon.png" />
     <link rel="stylesheet" href="../Styles/index.css" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="https://kit.fontawesome.com/9dd7ccf86a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Header Section -->
@@ -44,12 +45,12 @@
 
         <nav class="nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Docotos</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li tabindex="0"><a href="#">Home</a></li>
+            <li tabindex="0"><a href="#">Docotos</a></li>
+            <li tabindex="0"><a href="#">Services</a></li>
+            <li tabindex="0"><a href="#">Pages</a></li>
+            <li tabindex="0"><a href="#">Blogs</a></li>
+            <li tabindex="0"><a href="#">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -80,7 +81,7 @@
 
       <!-- next button -->
       <div class="nxt-btn">
-        <button class="slider-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        <button class="slider-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
       </div>
 
       <section class="card-container">
@@ -92,7 +93,7 @@
             natus cumque fugiat possimus illum at iusto consectetur quibusdam.</span
           >
           <span
-            ><a href="#">Learn More <i></i></a
+            ><a href="#">Learn More <i class="fas fa-arrow-right"></i></a
           ></span>
         </div>
         <div class="header-card">
@@ -103,7 +104,7 @@
             natus cumque fugiat possimus illum at iusto consectetur quibusdam.</span
           >
           <span
-            ><a href="#">Learn More <i></i></a
+            ><a href="#">Learn More <i class="fas fa-arrow-right"></i></a
           ></span>
         </div>
         <div class="header-card">
@@ -122,7 +123,7 @@
             </ul>
           </div>
           <span
-            ><a href="#">Learn More <i></i></a
+            ><a href="#">Learn More <i class="fas fa-arrow-right"></i></a
           ></span>
         </div>
       </section>
@@ -143,7 +144,11 @@
     <section class="services-section">
       <div class="service-card d-flex flex-column align-items-center justify-content-center">
         <div class="service-icon d-flex align-items-center justify-content-center mb-3">
-          <img src="" alt="Emergency Help" />
+          <i
+            class="fa fa-ambulance fa-3x fa-flip-horizontal"
+            style="color: rgb(19, 111, 217)"
+            aria-hidden="true"
+          ></i>
         </div>
         <h3 class="service-title">Emergency Help</h3>
         <p class="service-description">
@@ -157,7 +162,7 @@
 
       <div class="service-card d-flex flex-column align-items-center justify-content-center">
         <div class="service-icon d-flex align-items-center justify-content-center mb-3">
-          <img src="" alt="Enriched Pharmacy" />
+          <i class="fa fa-medkit fa-3x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
         </div>
         <h3 class="service-title">Enriched Pharmacy</h3>
         <p class="service-description">
@@ -171,7 +176,11 @@
 
       <div class="service-card d-flex flex-column align-items-center justify-content-center">
         <div class="service-icon d-flex align-items-center justify-content-center mb-3">
-          <img src="" alt="Medical Treatment" />
+          <i
+            class="fa fa-stethoscope fa-3x"
+            style="color: rgb(19, 111, 217)"
+            aria-hidden="true"
+          ></i>
         </div>
         <h3 class="service-title">Medical Treatment</h3>
         <p class="service-description">
@@ -184,7 +193,7 @@
       <div class="stats-container">
         <div class="stat-item">
           <div class="stat-icon">
-            <img src="hospital-icon.png" alt="Hospital Rooms" width="35" />
+            <i class="fa fa-home bg-transparent" style="color: white" aria-hidden="true"></i>
           </div>
           <div class="stat-info">
             <div class="stat-number">3468</div>
@@ -194,7 +203,7 @@
 
         <div class="stat-item">
           <div class="stat-icon">
-            <img src="" alt="Specialist Doctors" width="35" />
+            <i class="fa fa-user bg-transparent" style="color: white" aria-hidden="true"></i>
           </div>
           <div class="stat-info">
             <div class="stat-number">557</div>
@@ -204,7 +213,11 @@
 
         <div class="stat-item">
           <div class="stat-icon">
-            <img src="" alt="Happy Patients" width="35" />
+            <i
+              class="fa fa-smile-o fa-lg bg-transparent"
+              style="color: white"
+              aria-hidden="true"
+            ></i>
           </div>
           <div class="stat-info">
             <div class="stat-number">4379</div>
@@ -214,7 +227,11 @@
 
         <div class="stat-item">
           <div class="stat-icon">
-            <img src="" alt="Years of Experience" width="35" />
+            <i
+              class="fa fa-calendar fa-lg bg-transparent"
+              style="color: white"
+              aria-hidden="true"
+            ></i>
           </div>
           <div class="stat-info">
             <div class="stat-number">32</div>
@@ -249,27 +266,39 @@
 
           <div class="feature-list">
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Maecenas vitae luctus nibh.</span>
             </div>
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Maecenas vitae luctus nibh.</span>
             </div>
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Duis massa massa.</span>
             </div>
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Duis massa massa.</span>
             </div>
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Aliquam feugiat interdum.</span>
             </div>
             <div class="feature-item">
-              <div class="feature-icon"></div>
+              <div class="feature-icon">
+                <i class="fa fa-play fa-xs" style="color: white" aria-hidden="true"></i>
+              </div>
               <span>Aliquam feugiat interdum.</span>
             </div>
           </div>
@@ -278,7 +307,7 @@
         <div class="content-right">
           <img src="../Assets/Images/video-bg.jpg" alt="Patient Getting Medical Scan" />
           <div class="play-button">
-            <i></i>
+            <i class="fa fa-play fa-lg" style="color: white" aria-hidden="true"></i>
           </div>
           <!-- <video src="../Assets/Images/"></video> -->
         </div>
@@ -296,7 +325,10 @@
 
         <div class="emergency-banner-btn">
           <button class="emergency-btn">Contact Now</button>
-          <button class="emergency-btn">Learn More</button>
+          <button class="emergency-btn">
+            Learn More
+            <i class="fa fa-arrow-right fa-xs" style="color: white" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -352,8 +384,12 @@
 
       <div class="service-cards">
         <div class="service-card1">
-          <div class="service-icon">
-            <img src="" alt="General Treatment" />
+          <div class="icon">
+            <i
+              class="fa fa-clipboard fa-2x"
+              style="color: rgb(19, 111, 217)"
+              aria-hidden="true"
+            ></i>
           </div>
           <div>
             <h3 class="service-title">General Treatment</h3>
@@ -365,8 +401,8 @@
         </div>
 
         <div class="service-card2">
-          <div class="service-icon">
-            <img src="" alt="Teeth Whitening" />
+          <div class="icon">
+            <i class="fa fa-medkit fa-2x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
           </div>
           <div>
             <h3 class="service-title">Teeth Whitening</h3>
@@ -378,8 +414,8 @@
         </div>
 
         <div class="service-card3">
-          <div class="service-icon">
-            <img src="" alt="Heart Surgery" />
+          <div class="icon">
+            <i class="fa fa-heart fa-2x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
           </div>
           <div>
             <h3 class="service-title">Heart Surgery</h3>
@@ -391,8 +427,8 @@
         </div>
 
         <div class="service-card4">
-          <div class="service-icon">
-            <img src="" alt="Ear Treatment" />
+          <div class="icon">
+            <i class="fa fa-medkit fa-2x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
           </div>
           <div>
             <h3 class="service-title">Ear Treatment</h3>
@@ -404,8 +440,8 @@
         </div>
 
         <div class="service-card5">
-          <div class="service-icon">
-            <img src="" alt="Vision Problems" />
+          <div class="icon">
+            <i class="fa fa-eye fa-2x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
           </div>
           <div>
             <h3 class="service-title">Vision Problems</h3>
@@ -417,8 +453,8 @@
         </div>
 
         <div class="service-card6">
-          <div class="service-icon">
-            <img src="" alt="Blood Transfusion" />
+          <div class="icon">
+            <i class="fa fa-medkit fa-2x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
           </div>
           <div>
             <h3 class="service-title">Blood Transfusion</h3>
@@ -448,10 +484,18 @@
       </div>
 
       <div class="price-card1">
-        <div class="price-icon"><img src="" alt="scissor" /></div>
+        <div class="price-icon">
+          <i
+            class="fa fa-scissors fa-3x fa-rotate-270"
+            style="color: rgb(19, 111, 217)"
+            aria-hidden="true"
+          ></i>
+        </div>
         <div class="price-card-header">
           <strong>Plastic Surgery</strong>
-          <span>$199/per visit</span>
+          <h3 style="color: rgb(19, 111, 217)">
+            $199 <span style="color: gray; font-size: small">/per visit</span>
+          </h3>
         </div>
         <div class="card-content">
           <ul class="features">
@@ -462,21 +506,55 @@
             <li>Laborum deleniti ut!</li>
           </ul>
           <ul class="provided-features">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-times-circle"
+                style="background-color: white; color: gray"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-times-circle"
+                style="background-color: white; color: grey"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-times-circle"
+                style="background-color: white; color: grey"
+                aria-hidden="true"
+              ></i>
+            </li>
           </ul>
         </div>
 
         <button class="price-card-btn">Book Now</button>
       </div>
       <div class="price-card2">
-        <div class="price-icon"><img src="" alt="Teeth" /></div>
+        <div class="price-icon">
+          <i class="fa fa-medkit fa-3x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
+        </div>
         <div class="price-card-header">
           <strong>Teeth Whitening</strong>
-          <span>$299/per visit</span>
+          <h3 style="color: rgb(19, 111, 217)">
+            $299 <span style="color: gray; font-size: small">/per visit</span>
+          </h3>
         </div>
         <div class="card-content">
           <ul class="features">
@@ -487,21 +565,55 @@
             <li>Laborum deleniti ut!</li>
           </ul>
           <ul class="provided-features">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-times-circle"
+                style="background-color: white; color: grey"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-times-circle"
+                style="background-color: white; color: grey"
+                aria-hidden="true"
+              ></i>
+            </li>
           </ul>
         </div>
 
         <button class="price-card-btn">Book Now</button>
       </div>
       <div class="price-card3">
-        <div class="price-icon"><img src="" alt="Heart" /></div>
+        <div class="price-icon">
+          <i class="fa fa-heartbeat fa-3x" style="color: rgb(19, 111, 217)" aria-hidden="true"></i>
+        </div>
         <div class="price-card-header">
           <strong>Heart Surgery</strong>
-          <span>$399/per visit</span>
+          <h3 style="color: rgb(19, 111, 217)">
+            $399 <span style="color: gray; font-size: small">/per visit</span>
+          </h3>
         </div>
         <div class="card-content">
           <ul class="features">
@@ -512,11 +624,41 @@
             <li>Laborum deleniti ut!</li>
           </ul>
           <ul class="provided-features">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li>
+              <i
+                class="fa fa-check-circle"
+                style="background-color: white; color: rgb(19, 111, 217)"
+                aria-hidden="true"
+              ></i>
+            </li>
           </ul>
         </div>
 
@@ -580,7 +722,7 @@
 
     <!-- News Banner Section -->
     <section class="news-banner d-flex justify-content-center align-items-center mt-5">
-      <div class="d-flex justify-content-between w-75">
+      <div class="d-flex justify-content-around align-items-center w-100 h-100">
         <img src="/Assets/Images/client1.png" alt="" class="mr-5" />
         <img src="/Assets/Images/client2.png" alt="" class="mr-5" />
         <img src="/Assets/Images/client3.png" alt="" class="mr-5" />
@@ -681,11 +823,22 @@
               vel facere quos vitae debitis repudiandae a impedit aperiam harum, optio, eius ab
               nostrum tempora fugit nisi esse?
             </p>
-            <div class="d-flex">
-              <a href="#" class="card-link p-2 border rounded-circle"></a>
-              <a href="#" class="card-link p-2 border rounded-circle"></a>
-              <a href="#" class="card-link p-2 border rounded-circle"></a>
-              <a href="#" class="card-link p-2 border rounded-circle"></a>
+            <div class="footer-socials d-flex">
+              <a href="#" class="card-link border rounded-circle"
+                ><i class="fa fa-facebook fa-xs" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="card-link border rounded-circle"
+                ><i class="fa fa-google-plus fa-xs" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="card-link border rounded-circle"
+                ><i class="fa fa-twitter fa-xs" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="card-link border rounded-circle"
+                ><i class="fa fa-pinterest-p fa-xs" aria-hidden="true"></i
+              ></a>
+              <a href="#" class="card-link border rounded-circle"
+                ><i class="fa fa-pinterest-p fa-xs" aria-hidden="true"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -694,18 +847,88 @@
             <h3 class="card-title mb-4">Quick Links</h3>
             <div class="card-text d-flex gap-5">
               <ul class="d-flex flex-column gap-4">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Our Cases</a></li>
-                <li><a href="#">Other Links</a></li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Home</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">About Us</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Services</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Our Cases</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Other Links</a>
+                </li>
               </ul>
               <ul class="d-flex flex-column gap-4">
-                <li><a href="#">Consulting</a></li>
-                <li><a href="#">Finance</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Consulting</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Finance</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Testimonials</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">FAQ</a>
+                </li>
+                <li>
+                  <i
+                    class="fa fa-play fa-xs"
+                    style="color: white; margin-right: 5px"
+                    aria-hidden="true"
+                  ></i
+                  ><a href="#">Contact Us</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -750,7 +973,13 @@
               <button
                 id="footer-section-card-btn "
                 class="w-25 border border-light border-start-0 rounded-end p-2"
-              ></button>
+              >
+                <i
+                  class="fa fa-paper-plane fa-lg"
+                  style="color: rgb(19, 111, 217); transform: rotate(20deg)"
+                  aria-hidden="true"
+                ></i>
+              </button>
             </div>
           </div>
         </div>
