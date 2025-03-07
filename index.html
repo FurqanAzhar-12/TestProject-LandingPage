@@ -52,6 +52,11 @@
             <li tabindex="0"><a href="#">Blogs</a></li>
             <li tabindex="0"><a href="#">Contact Us</a></li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
 
         <button id="nav-btn">Book Appointment</button>
@@ -60,8 +65,14 @@
 
     <!-- Slider Section -->
     <section class="slider-container">
+      <section class="slider-wrapper">
+        <ul class="slides-container" id="slides-container">
+          <li class="slide"><img src="../Assets/Images/slider.jpg" alt="" /></li>
+        </ul>
+      </section>
+
       <div class="prev-btn">
-        <button class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="slider-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
       </div>
       <div class="slider-content">
         <h4 class="slider-text">
@@ -81,7 +92,9 @@
 
       <!-- next button -->
       <div class="nxt-btn">
-        <button class="slider-btn"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+        <button class="slider-btn" id="nxt-btn">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </button>
       </div>
 
       <section class="card-container">
@@ -997,4 +1010,5 @@
       </div>
     </footer>
   </body>
+  <script src="../Scripts/index.js"></script>
 </html>
